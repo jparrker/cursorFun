@@ -1,0 +1,61 @@
+*{
+  position: absolute;
+  cursor: none; 
+}
+
+body {
+  background: #010400;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  border-radius: 50%;
+  background: #111;
+  position: fixed;
+  transition: scale 0.3s;
+  border: 2px solid #ec058e;
+
+}
+
+.wide {
+  scale: 2; 
+  border-width: 2px;
+}
+
+h1 {
+  width: 100vw;
+  padding: 5rem;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-align: center;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: 0.2s ease-in-out; 
+}
+
+.hide {
+  opacity: 0;
+}
+
+.fill {
+  color: #ec058e;
+  z-index: 0;
+
+}
+
+.outline {
+  color: transparent;
+  -webkit-text-stroke: 0.5px #ec058e;
+  z-index: 2; 
+}
+
+
+
+
